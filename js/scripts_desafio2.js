@@ -1,13 +1,15 @@
-// carrito de compras
+//simulación de pago de un carrito de compras
 
 let total = parseFloat(prompt("Ingrese el total a pagar"));
 let pago = prompt(
   "Seleccione la forma de pago \n1- Efectivo (15% de descuento) \n2- Tarjeta de débito \n3- Tarjeta de crédito \n4 - Transferencia (5% de descuento)"
 );
+
 /* 
 while (cuotas != 1 && cuotas != 2 && cuotas != 3 && cuotas != 4) {
   alert("La opción elegida no es correcta");
  */
+
 switch (pago) {
   //Efectivo
   case "1":
@@ -47,8 +49,7 @@ switch (pago) {
           "El recargo por abonar en tres cuotas es $" +
             tresCuotas(porcentajeTresCuotas, total) +
             ". El monto a pagar es un total de $" +
-            (total - tresCuotas(porcentajeTresCuotas, total)) +
-            " en 3 cuotas de $"
+            (total - tresCuotas(porcentajeTresCuotas, total))
         );
         break;
 
@@ -62,8 +63,7 @@ switch (pago) {
           "El recargo por abonar en seis cuotas es $" +
             seisCuotas(porcentajeSeisCuotas, total) +
             ". El monto a pagar es un total de $" +
-            (total - seisCuotas(porcentajeSeisCuotas, total)) +
-            " en 6 cuotas de $"
+            (total - seisCuotas(porcentajeSeisCuotas, total))
         );
         break;
       // 12 cuotas
@@ -76,8 +76,7 @@ switch (pago) {
           "El recargo por abonar en doce cuotas es $" +
             doceCuotas(porcentajeDoceCuotas, total) +
             ". El monto a pagar es un total de $" +
-            (total - doceCuotas(porcentajeDoceCuotas, total)) +
-            " en 12 cuotas de $"
+            (total - doceCuotas(porcentajeDoceCuotas, total))
         );
         break;
     }
@@ -97,6 +96,7 @@ switch (pago) {
     );
     break;
 }
+
 /* 
 pago = prompt(
   "Seleccione la forma de pago \n1- Efectivo (15% de descuento) \n2- Tarjeta de crédito \n3- Tarjeta de débito \n4 - Transferencia"
