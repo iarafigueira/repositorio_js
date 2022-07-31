@@ -48,3 +48,30 @@ p {
   text-align: center;
   margin-bottom: 2%;
 }
+
+.formulario {
+  background-color: #d9c9c7;
+  color: #111a67;
+
+  h5{
+    font-family: "Montserrat";
+    font-size: 15pt;
+    color: #111a67;
+    text-align: left;
+  }
+
+  .label-formulario{
+    font-family: "Montserrat";
+    font-size: 12pt;
+    color: #111a67;
+    text-align: left;
+  }
+
+  #suscribirse{
+    margin: 5px;
+    background-color: #111a67;
+    border-radius: 5px;
+    color: #d9c9c7;
+    padding: 5px;
+  }
+}
